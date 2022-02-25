@@ -1,0 +1,15 @@
+version: '3'
+services:
+  sunkern:
+    image: pmdcollab/sunkern:latest
+    environment:
+      SUNKERN_DATA_DIR: "/data"
+      SUNKERN_PORT: "87445"
+      SUNKERN_DISCORD_BOT_USER_TOKEN: "..."
+      SUNKERN_GITHUB_APP_ID: "..."
+      SUNKERN_GITHUB_SECRET_KEY: "/private-key.pem"
+    volumes:
+      - "./private-key.pem:/private-key.pem"
+      - "./data:/data"
+    ports:
+      - "87445:87445"

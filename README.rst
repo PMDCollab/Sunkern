@@ -1,4 +1,4 @@
 Sunkern
 =======
 
-A Discord Bot for creating Discord issues.
+A Discord Bot for creating Github issues.
